@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Short Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Self-driving Vehicle Survey</h1>
+    <p id="description">Do you trust self-driving vehicles with your life?</p>
+    <form id="survey-form">
+      <label id="name-label">Please enter your name<input id="name" type="text" required placeholder="Name"></label>
+      <label id="email-label">Please enter your email<input id="email" type="email" required placeholder="Email"></label>
+      <label id="number-label">Please enter your phone number <input id="number" type="number" min="10" max="10" placeholder="123-456-7890"></label>
+      <label>1, 2, or 3?
+        <select id="dropdown">
+          <option value="">Choose</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </label>
+      <label>Do you have a family member with an electric vehicle?
+        <label>Yes<input type="radio" name="family-question" value="0"></label>
+        <label>No<input type="radio" name="family-question" value="1"></label>
+      </label>
+      <label>If so, how many?
+        <label>1<input type="checkbox" value="0" name="amount-one"></label>
+        <label>2<input type="checkbox" value="1" name="amount-two"></label></label>
+        <label>3+<input type="checkbox" value="2" name="amount-three"></label></label>
+      </label>
+      <textarea id="questions" name="questions" rows="6" cols="40" placeholder="Any further questions?"></textarea>
+      <input type="submit" value="submit" id="submit">
+    </form>
+  </body>
+</html>
